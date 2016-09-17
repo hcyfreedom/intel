@@ -1,0 +1,214 @@
+body {
+    background: url(../images/images/bg.png) fixed center no-repeat;
+    margin:0;
+    padding:0;
+    padding-top: 77px;
+}
+.top{
+    width:100%;
+    height: 77px;
+    position: fixed;
+    top:0;
+    z-index: 99;
+}
+.header{
+    width: 960px;
+    height: 200px;
+    margin: 0 auto;
+    background: rgba(255,255,255,.2);
+}
+.container{
+    width: 960px;
+    min-width: 960px;;
+    margin: 0 auto;
+    position: relative;
+}
+.scrubber{
+    width: 47px;
+    position: absolute;
+    top: 29px;
+    left:0;
+    z-index:999;
+    /*background: rgba(255,255,255,.2);*/
+}
+.content{
+    min-height: 1000px;
+    background: url("../images/images/spine.png") repeat-y 126px 0;
+    padding-left: 160px;
+    padding-top: 50px;
+    position: relative;
+}
+.scrubber a{
+    display: block;
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    border-right: 2px solid #8c8c8c;
+    border-right-color:rgba(255,255,255,.2) ;
+    padding-right: 5px;
+    text-decoration:none;
+    text-align: right;
+    color: #a5a5a5;
+    text-shadow: 0 1px 1px rgba(255,255,255,.3);
+}
+.scrubber a:hover,.scrubber a.current{
+    border-right-color: #009861;
+    color: #009861;
+    font-weight: bold;
+}
+.scrubber a:hover{
+    text-decoration: underline;
+}
+.scrubber a.current:hover{
+    text-decoration: none;
+}
+.content_year ,.content_month{
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #a5a5a5;
+    font-weight: bold;
+    position: relative;
+    left: -90px;
+    text-shadow: 0 1px 1px rgba(255,255,255,.3);
+    clear: both;
+}
+.content_item{
+    width: 370px;
+    height:auto;
+    background: #ffffff;
+    border-radius: 4px;
+    margin: 20px 30px 0 0;
+    position: relative;
+    color: #888888;
+
+}
+.content_item_first{
+    margin-top:-20px;
+}
+.content_item_left{
+    float: left;
+}
+.content_item_right{
+    float: right;
+}
+/*在右边的点需要重新设置偏移*/
+.content_item_right .content_item_icon_dot{
+    left: -439px;
+}
+.content_item_icon_arrow{
+    position: absolute;
+    left: -10px;
+    top:20px;
+    height: 0;
+    border-color:transparent #ffffff transparent transparent;
+    border-width: 10px 10px 10px 0;
+    border-style:dashed solid dashed dashed ;
+}
+.content_item_icon_dot{
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    background: #ffffff;
+    position: absolute;
+    left: -39px;
+    top: 25px;
+}
+.content_item_icon_dot_child{
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background: #009861;
+    position: absolute;
+    left:2px;
+    top: 2px;
+}
+.content_item_header{
+    padding: 15px;
+    padding-bottom: 0;
+}
+.content_item_header_title{
+    position: relative;
+    padding: 0 0 10px 56px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 28px;
+}
+.content_item_header_title_lunar{
+    width: 46px;
+    height: 46px;
+    border-radius: 8px;
+    font-size: 27px;
+    line-height: 23px;
+    position: absolute;
+    top:0;
+    left: 0;
+    overflow: hidden;
+    background: #009861;
+    color: #eeeeee;
+}
+.content_item_header_intro{
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+.ui_icon{
+    width: 15px;
+    height: 15px;
+    display:inline-block;
+    font-size: 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-right: 5px;
+    background: url("../images/images/timeline.png");
+    vertical-align: bottom;
+}
+.quote_before{
+    background-position: -986px -85px;
+}
+.quote_after{
+    background-position: -986px -102px;
+}
+.content_item_media{
+    padding-bottom: 10px;
+    height: 277px;
+    overflow: hidden;
+}
+.content_item_footer{
+    padding: 10px 15px;
+    margin: 0 15px;
+    border-top: 1px solid #d6d6d6;
+    font-size: 12px;color: #b2b2b2;
+}
+.content_item_footer_info,
+.content_item_footer_like{
+    padding-top: 5px;
+}
+.content_item_footer_info a{
+    color:#009861;
+    padding-right: 10px;
+    text-decoration: none;
+    display: inline-block;
+    height: 20px;
+}
+.icon_zan, .icon_pin{
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+    font-size: 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-right: 5px;
+    background: url("../images/images/timeline.png");
+    vertical-align: bottom;
+}
+.icon_zan{
+    background-position: -883px -21px;
+}
+.icon_pin{
+    background-position: -897px -42px;
+}
+.hide{
+    display: none;
+}

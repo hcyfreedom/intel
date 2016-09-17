@@ -1,0 +1,74 @@
+body {
+    background: url(../images/bg.png) fixed center repeat-y;
+    margin:0;
+    padding:0;
+    padding-top: 77px;
+    height: auto;
+    font-family: "微软雅黑";
+}
+.top{
+    width:100%;
+    height: 77px;
+    position: fixed;
+    top:0;
+    z-index: 99;
+}
+.top2{
+    width:100% ;
+    height: 100px;
+    position: fixed;
+    background: url(../images/nav.png) fixed center no-repeat;
+    z-index: 1;
+}
+.dog{
+    position: relative;
+    left: 46%;
+    top: 20px;
+}
+.dog img{
+    width: 100px;
+    height: 100px;
+}
+.nav{
+    width: 150px;
+    height: 500px;
+    position: fixed;
+    background-color: #009861;
+    top: 90px;
+    z-index: 1;
+
+}
+.nav a:link{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.photo{
+    width: 80px;
+    height: 80px;
+    border: 5px solid #ffffff;
+    margin:20px 26px;
+    cursor: pointer;
+}
+.photo img{
+    width: 80px ;
+    height: 80px;
+    cursor: pointer;
+}
+.nav p{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+}
+.label{
+    width: 150px;
+    height: 33px;
+    left: 0;
+    top: 171px;
+    position: absolute;
+    z-index: -1;
+    background: url("../images/label.png") no-repeat;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.info_wrap{
+	width: 80%;
+	margin: 20px auto;
+}
+#heartRate{
+	height: 600px;
+	width: 600px;
+}
+.info_wrap{
+	background-color: #fff;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta charset="utf-8" />
+		<title>位置信息</title>
+		<link rel="stylesheet" href="../main_css/style.css" />
+		<link rel="stylesheet" href="../main_css/position.css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ySfNqNFmzBWySUrDi5UWjt7fHZPcBWNg"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/CurveLine/1.5/src/CurveLine.min.js"></script>
+		<link href="../main_css/common.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	<div class="top"><img src="../images/top.png"></div>
+	<div class="top2">
+		<div class="dog">
+			<img src="../images/dog.png">
+		</div>
+	</div>
+	<div class="nav">
+		<a href="My_Center.html"><div class="photo"><img src="../images/cat/cat.jpg"></div></a>
+		<a href="My_Center.html"><div class="name"><p style="color:#ffffff;z-index: 99">hcy</p></div></a>
+		<a href="health.html"><div class="healthy" id="bt1"><p style="color: #80b19c;z-index: 1">Pet Healthy</p></div></a>
+		<a href="position.html"><div class="position" id="bt2"><p style="color: #80b19c;z-index: 1">Pet Position</p></div></a>
+		<a href="timer.html"><div class="happy_time" id="bt3"><p style="color: #80b19c;z-index: 1">Happy Time</p></div></a>
+		<a href="petHome.html"><div class="home" id="bt4"><p style="color: #80b19c;z-index: 1">Pet Home</p></div></a>
+		<div class="label" style="top: 220px;"></div>
+	</div>
+		<div class="container_lj">
+			<div class="content_wrap">
+				<div id="mymap">
+					
+				</div>
+				<div class="map_btn" id="near_btn">
+					<img  class="btn_img" src="../images/img/img/position/position_btn.png" />
+					<span>Near</span>
+				</div>
+				<div class="map_btn" id="lost_btn">
+					<img class="btn_img" src="../images/img/img/position/clock.png"/>
+					<span>Root</span>
+				</div>
+				<div class="map_btn" id="root_btn">
+					<img class="btn_img" src="../images/img/img/position/rout.png"/>
+					<span>Lost</span>
+				</div>
+				
+			</div>
+		
+		<div class="clear"></div>
+		</div>
+		<script type="text/javascript" src="../main_js/js/jquery.js" ></script>
+		<script type="text/javascript" src="../main_js/js/IsInCircle.js" ></script>
+		<script type="text/javascript" src="../main_js/js/position.js" ></script>
+		<script src="../main_js/after_js.js" type="text/javascript" ></script>
+	</body>
+</html>

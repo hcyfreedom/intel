@@ -1,0 +1,43 @@
+.content_wrap{
+	position: relative;
+}
+.operate img{
+	max-height: 32px;
+}
+
+#content{
+	position: absolute;
+	top: 10%;
+	left:15%;
+	width: 500px;
+	height: 500px;
+	background: #fff;
+}
+#dog_canvas{
+	width: 500px;
+	height: 500px;
+	background-image: url(../images/img/img/pethome/house.jpg);
+}
+
+@media only screen and (min-width: 940px){
+	#seeAround{
+		position: absolute;
+		top:400px;
+		left: 50px;
+	}
+	#sidebar{
+		float: right;
+		margin-right: 10%;
+		margin-top: 20%;
+	}
+}
+@media only screen and (max-width: 940px) {
+	#sidebar{
+		margin-top: 30px;
+		margin-left: 410px;
+		
+	}
+	.operate{
+		display: inline-block;	
+	}
+}

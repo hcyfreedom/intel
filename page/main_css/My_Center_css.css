@@ -1,0 +1,106 @@
+
+#personalpage{
+    width: 50%;
+    margin: 0 auto;
+}
+.change{
+    width: 80px;
+    height: 30px;
+    float: right;
+    margin-right: 0px;
+    font-size: 20px;
+    border: 2px #009861 solid;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #009861;
+    outline: medium;
+    border-radius: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid #b9b9b9;
+}
+.complete{
+    width: 80px;
+    height: 30px;
+    float: right;
+    margin-right: 120px;
+    font-size: 20px;
+    border: 2px #009861 solid;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #009861;
+    outline: medium;
+    border-radius: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid #b9b9b9;
+    margin-bottom: 30px;
+}
+input.change:hover,input.complete:hover{
+    border-bottom: 2px solid #009861;
+}
+
+.content{
+    margin-top: 20px;
+}
+#picture span{
+    float: left;
+}
+#homework span{
+    float: left;
+
+}
+#finish{
+    margin-top: 20px;
+    text-align: center;
+
+}
+#finish div{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    line-height: 50px;
+    border: 2px black solid;
+}
+select{
+    border: 1px solid #009861;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../images/arrow.png") no-repeat right center transparent;
+    padding-right: 14px;
+    color: #959595;
+    width: 80px;
+    height: 25px;
+    border-radius: 5px;
+    outline: medium;
+}
+input{
+    width: 170px;
+    height: 20px;
+    background:transparent;
+    color:#959595;
+    border:1px solid #009861;
+    border-radius: 5px;outline: medium;
+}
+.all {
+    width: 700px;
+    height: 740px;
+    border: 5px solid #ffffff;
+    margin-left: 300px;
+    margin-top: 200px;
+    background-color: #ffffff;
+    margin-bottom: 70px;
+}
+
+textarea{
+    width: 380px;
+    height: 160px;
+    border: 1px solid #009861;
+    outline: medium;
+    color: #959595;
+    margin-left: 80px;
+}

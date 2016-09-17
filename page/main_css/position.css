@@ -1,0 +1,99 @@
+#mymap{
+	/*position: absolute;*/
+	margin: 20px auto;
+	width: 90%;
+	height: 505px;
+	min-height: 505px;
+	margin-top: 10px;
+	
+}
+
+.map_btn {
+	display: inline-block;
+	/* margin: 10px 107px -21px 68px; */
+	width: 132px;
+	height: 40px;
+	background: -webkit-linear-gradient(top,#ffffff,#eaeaea);
+	border-radius: 10px;
+	font-weight: bold;
+	position: relative;
+	top: 10px;
+	left: 19px;
+	margin-left: 57px;
+}
+	
+
+.map_btn span{
+	position: relative;
+    top: -8px;
+    left: -13px;
+}
+#near_btn{
+	color: #009861;
+	margin-left: 150px;
+	
+}
+.btn_img{
+	margin: 5px 6px 0px 32px ;
+}
+#lost_btn{
+	color: #eb4f38;
+	
+}
+#show_way_btn{
+	color:#009861;
+}
+#root_btn{
+	color: #836FFF;
+}
+/***********弹出框***************/
+.pop{
+	position: absolute;  
+	left: 57%;
+    /* top: 20px; */
+    bottom: 120px;
+	z-index: 1000;
+	width: 240px;
+	height: 250px;
+	background: #fff;;
+	border: 1px solid #EAEAEA;
+	box-shadow:-2px 2px 4px #bbb;
+	color:#7a7a7a ;
+}
+.contain_form {
+	display: block;
+	width: 175px;
+	height: 200px;
+	margin: 16px auto;
+	
+}
+.form-group {
+	margin-bottom: 7px;
+}
+.form-group label {
+	margin: 7px;
+	display: inline-block;
+	width: 7em;
+	color: #7a7a7a;
+	font-size: 11px;
+}
+.form-group input,.form-group select {
+	color: #7a7a7a;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	
+	margin-left: 6px;
+}
+.form-group input{
+	height:28px;
+	width: 166px;
+}
+.form-group select{
+	height: 33px;
+	width: 170px;
+}
+.close{
+	position: absolute;
+    top: 5px;
+    right: 5px;
+}

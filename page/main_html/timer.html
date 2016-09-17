@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>happyTime</title>
+    <link href="../main_css/timer.css" rel="stylesheet" type="text/css">
+    <link href="../main_css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--模板-->
+<!--模板的精髓在于 把需要动态变化的内容 用一个特殊字符代替了-->
+<div class="hide">
+    <!--时序菜单的模板-->
+    <div id="tpl_scrubber_year">
+        <a href="javascript:;" class="scrubber_year current" id="scrubber_year_{year}" onclick="show_year({year})" >{year}</a><!--把年份替换掉-->
+        {list}<!--用月份来替换list-->
+    </div>
+    <div id="tpl_scrubber_month">
+        <a href="javascript:;" class="scrubber_month scrubber_month_in_{year}" id="scrubber_month_{year}_{month}" onclick="show_month({year},{month})">{month}月</a>
+    </div>
+
+    <!--日志列表的模板-->
+    <div id="tpl_content_year">
+         <div class="content_year" id="content_year_{year}">{year}</div>
+        {list}
+    </div>
+    <div id="tpl_content_month">
+       <div class="content_month" id="content_month_{year}_{month}">{month}月</div>
+        {list}
+    </div>
+    <div id="tpl_content_item">
+        <div class="content_item content_item_{position} {isFirst}">
+        <div class="content_item_icon_arrow"></div>
+        <div class="content_item_icon_dot">
+            <div class="content_item_icon_dot_child"></div>
+        </div>
+        <div class="content_item_header">
+            <div class="content_item_header_title">
+                <div class="content_item_header_title_lunar">
+                    {lunar}
+                </div>{date}
+            </div>
+            <div class="content_item_header_intro"><i class="ui_icon quote_before"></i>
+                {intro}
+                <i class="ui_icon quote_after"></i> </div>
+            <div class="content_item_media">
+                {media}
+            </div>
+            <div class="content_item_footer">
+                <div class="content_item_footer_info">
+                    <a href="javascript:;" title="赞"><i class="icon_zan"></i> {like}</a>
+                    <a href="javascript:;" title="评论"><i class="icon_pin"></i> {comment}</a>
+                </div>
+                <div class="content_item_footer_like">{like_format}人觉得很赞</div>
+            </div>
+        </div><!--日志成员-->
+    </div>
+        </div>
+</div>
+
+<div class="top"><img src="../images/images/top.png"></div>
+<div class="nav">
+    <a href="My_Center.html"><div class="photo"><img src="../images/cat/cat.jpg"></div></a>
+    <a href="My_Center.html"><div class="name"><p style="color:#ffffff;z-index: 99">hcy</p></div></a>
+    <a href="health.html"><div class="healthy" id="bt1"><p style="color: #80b19c;z-index: 1">Pet Healthy</p></div></a>
+    <a href="position.html"><div class="position" id="bt2"><p style="color: #80b19c;z-index: 1">Pet Position</p></div></a>
+    <a href="timer.html"><div class="happy_time" id="bt3"><p style="color: #80b19c;z-index: 1">Happy Time</p></div></a>
+    <a href="petHome.html"><div class="home" id="bt4"><p style="color: #80b19c;z-index: 1">Pet Home</p></div></a>
+    <div class="label" style="top: 269px;"></div>
+</div>
+<div class="header"></div>
+<div class="container">
+    <div class="scrubber" id="scrubber">
+        <a href="javascript:;" class="scrubber_year current">2016</a>
+        <a href="javascript:;" class="scrubber_month">3月</a>
+        <a href="javascript:;" class="scrubber_month">2月</a>
+    </div><!--时序菜单列表-->
+    <div class="content" id="content">
+        <div class="content_year">2016</div>
+        <div class="content_month">三月</div>
+
+        <div class="content_item">
+            <div class="content_item_icon_arrow"></div>
+            <div class="content_item_icon_dot">
+                <div class="content_item_icon_dot_child"></div>
+            </div>
+            <div class="content_item_header">
+                <div class="content_item_header_title">
+                    <div class="content_item_header_title_lunar">三<br>&nbsp;十</div>2016-9-4
+                </div>
+                <div class="content_item_header_intro"><i class="ui_icon quote_before"></i> 我们家的第一只喵！喵喵喵~<i class="ui_icon quote_after"></i> </div>
+            <div class="content_item_media"><img src="../images/images/dog.png" width="370"> </div>
+            <div class="content_item_footer">
+                <div class="content_item_footer_info">
+                    <a href="javascript:;" title="赞"><i class="icon_zan"></i> (200）</a>
+                    <a href="javascript:;" title="评论"><i class="icon_pin"></i> (300)</a>
+                </div>
+                <div class="content_item_footer_like">500个人觉得很赞</div>
+            </div>
+        </div><!--日志成员-->
+    </div><!--日志内容-->
+</div>
+</body>
+<script src="../main_js/GetLunarDay.js" type="text/javascript"></script>
+<script src="../main_js/fx.js" type="text/javascript"></script>
+<script src="../main_js/timer_data.js" type="text/javascript"></script>
+<script src="../main_js/timer_js.js" type="text/javascript"></script>
+</html>
